@@ -1,0 +1,52 @@
+// Place all the styles related to the ipsum controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.hipster {
+  background: url('hipster.jpg');
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.samuel {
+  background: url('samuel.jpg');
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.standard {
+  background: url('standard.jpg');
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+}
+
+.veggie {
+  background: url('veggie.jpg');
+  -webkit-background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.output p {
+  font-size: 150%;
+}
+
+h1 {
+  font-size: 400%;
+}
+
+.link {
+  font-size: 150%;
+}
+
+.image {
+  height: 800px;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 750px) {
+  .image{
+    height: 300px;
+  }
+}

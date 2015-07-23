@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12" style="height:150px;"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <h1>Lipsum Generator... <small>get all the ipsums!</small></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12" style="height:20px;"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <p>Welcome to Lipsum Generator!
+      Please select your desired Lorem Ipsum type and enter the number
+      of paragraphs you want.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12" style="height:15px;"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <%= form_tag(lipsum_path, method: "get") do %>
+        <%= radio_button_tag(:type, "hipster") %>
+        <%= label_tag(:type, "Hipster") %>
+        <%= radio_button_tag(:type, "samuel") %>
+        <%= label_tag(:type, "Samuel") %>
+        <%= radio_button_tag(:type, "standard") %>
+        <%= label_tag(:type, "Standard") %>
+        <%= radio_button_tag(:type, "veggie") %>
+        <%= label_tag(:type, "Veggie") %>
+        <%= label_tag(:num, "Number of Paragraphs:") %>
+        <%= text_field_tag(:num) %>
+        <%= submit_tag("Generate") %>
+      <% end %>
+    </div>
+</div>

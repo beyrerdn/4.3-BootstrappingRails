@@ -1,0 +1,16 @@
+<!--for ipsum controller-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 output">
+      <h1><%=@type.capitalize %> ipsum:</h1>
+      <div class="link">
+        <%= link_to("Pick a new ipsum", chooser_path) %>
+      </div>
+      <% @output.each do |paragraph| %>
+        <p><%= paragraph %></p>
+      <% end %>
+    </div>
+    <div class="col-offset-6 col-xs-6" style="height:30px;"></div>
+    <div class="col-sm-6 <%=params[:type]%> image"></div>
+  <div>
+</div>
